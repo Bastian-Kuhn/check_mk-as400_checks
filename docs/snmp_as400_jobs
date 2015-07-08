@@ -1,0 +1,21 @@
+title: CPU usage of a Solaris ldom
+agents: snmp
+catalog: os/kernel
+license: GPL
+distribution: kalugen
+description:
+ This check monitors the number of running jobs on an OS/400 partition via SNMP.
+
+item:
+ none
+
+perfdata:
+ The number of running jobs is saved into the rrd database.
+
+inventory:
+ This check supports inventory.
+
+[parameters]
+parameters (dict): this check supports the new parameters dictionary format.
+
+{"jobs_levels"}: Warning and critical memory usage levels in %

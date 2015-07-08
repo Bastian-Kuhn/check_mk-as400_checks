@@ -1,0 +1,4 @@
+factory_settings['as400_defaults'] = {
+  "cpu_levels":  (80.0,90.0),
+  "jobs_levels": (5000,10000),
+};
