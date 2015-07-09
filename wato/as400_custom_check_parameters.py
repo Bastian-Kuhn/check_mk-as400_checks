@@ -5,14 +5,25 @@ register_check_parameters(
     Dictionary(
         elements = [
             ("cpu_levels",
-                Tuple(
-                    title = _("Levels for cpu usage (%)"),
-                    label = _("Levels for cpu usage (%)"),
-                    elements = [
-                        Percentage(title = _("Warning at:" ), maxvalue = 1500.0),
-                        Percentage(title = _("Critical at:"), maxvalue = 1500.0),
+                Dictionary(
+                    elements= [
+                        (
+                            "levels",
+                            Tuple(
+                                title = _("Levels for cpu usage (%)"),
+                                label = _("Levels for cpu usage (%)"),
+                                elements = [
+                                    Percentage(title = _("Warning at:" ), maxvalue = 1500.0),
+                                    Percentage(title = _("Critical at:"), maxvalue = 1500.0),
+                                ]
+                            )
+                        ),
+                        (
+                            "average",
+                            Integer(title = _("Averaging on:"))
+                        )
                     ]
-                ),
+                )
             ),
             ("jobs_levels",
                 Tuple(
