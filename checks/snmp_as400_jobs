@@ -22,7 +22,7 @@ check_info["snmp_as400_jobs"] = {
     "inventory_function"      : inventory_as400_jobs,
     "service_description"     : "AS/400 Jobs",
     "has_perfdata"            : True,
-    "group"                   : "as400",
+    "group"                   : "as400_jobs",
     "default_levels_variable" : "as400_jobs_defaults",
     "includes"                : ["snmp_as400.include"]
 }

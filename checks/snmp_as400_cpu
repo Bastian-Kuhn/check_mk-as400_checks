@@ -10,7 +10,7 @@ check_info["snmp_as400_cpu"] = {
     "inventory_function"      : inventory_as400_cpu,
     "service_description"     : "AS/400 CPU",
     "has_perfdata"            : True,
-    "group"                   : "as400",
+    "group"                   : "as400_cpu",
     "default_levels_variable" : "as400_cpu_defaults",
     "includes"                : ["snmp_as400.include","cpu_util.include"]
 }
