@@ -29,4 +29,6 @@ chown apache:nagios -R \
 chmod ug+x \
   /usr/share/check_mk/checks/snmp_as400*
 
+service httpd restart
+
 exit 0
