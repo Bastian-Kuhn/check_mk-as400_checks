@@ -4,15 +4,15 @@ def inventory_as400_jobs(info):
 def check_as400_jobs(item, params, info):
 
   warn,crit = params["jobs_levels"]
-  job_num   = saveint(info[0][0])
+  jobs_num  = saveint(info[0][0])
 
-  perfdata  = [ ( "jobs", job_num, warn, crit, None, None ) ]
-  output    = "AS/400 Jobs at %d" % job_num
+  perfdata  = [ ( "jobs", jobs_num, warn, crit, None, None ) ]
+  output    = "AS/400 Jobs at %d" % jobs_num
 
   rc = 0
-  if job_num >= crit:
+  if jobs_num >= crit:
     rc = 2
-  elif job_num >= warn:
+  elif jobs_num >= warn:
     rc = 1
 
   return (rc, output, perfdata)
@@ -23,7 +23,7 @@ check_info["snmp_as400_jobs"] = {
     "service_description"     : "AS/400 Jobs",
     "has_perfdata"            : True,
     "group"                   : "as400",
-    "default_levels_variable" : "as400_defaults",
+    "default_levels_variable" : "as400_jobs_defaults",
     "includes"                : ["snmp_as400.include"]
 }
 
