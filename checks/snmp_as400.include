@@ -1,7 +1,8 @@
-factory_settings['as400_defaults'] = {
-  "cpu_levels":  {
-    "levels"  : (80.0,90.0),
-    "average" : 15
-  },
-  "jobs_levels": (9000,9500),
-};
+factory_settings['as400_cpu_defaults'] = {
+  "levels"  : (80.0,90.0),
+  "average" : 15
+}
+
+factory_settings['as400_jobs_defaults'] = {
+  "jobs_levels": (9000,9500)
+}
