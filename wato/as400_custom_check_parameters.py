@@ -58,3 +58,23 @@ register_check_parameters(
     None,None
 )
 
+register_check_parameters(
+    _("Operating System Resources"),
+    "as400_users",
+    _("AS/400 logged in users"),
+    Dictionary(
+        elements = [
+            ("users_levels",
+                Tuple(
+                    title = _("Levels for Users"),
+                    label = _("Levels for Users"),
+                    elements = [
+                        Integer(title = _("Warning at:" ), maxvalue = 1000000),
+                        Integer(title = _("Critical at:"), maxvalue = 1000000),
+                    ]
+                )
+            )
+        ]
+    ),
+    None,None
+)
