@@ -26,6 +26,7 @@ register_check_parameters(
             ( "average",
                 Integer(
                     title = _("Averaging on:"),
+                    label = _("Averaging on"),
                     maxvalue = 144,
                     unit = "minutes",
                     default_value = 15
@@ -33,7 +34,7 @@ register_check_parameters(
             )
         ]
     ),
-    None,"dict"
+    None,None
 )
 
 register_check_parameters(
@@ -42,7 +43,7 @@ register_check_parameters(
     _("AS/400 Job queue counters"),
     Dictionary(
         elements = [
-            ("job_levels",
+            ("jobs_levels",
                 Tuple(
                     title = _("Levels for Jobs"),
                     label = _("Levels for Jobs"),
@@ -54,6 +55,6 @@ register_check_parameters(
             )
         ]
     ),
-    None,"dict"
+    None,None
 )
 
