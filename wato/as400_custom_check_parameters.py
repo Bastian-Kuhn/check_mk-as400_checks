@@ -78,3 +78,24 @@ register_check_parameters(
     ),
     None,None
 )
+
+register_check_parameters(
+    _("Operating System Resources"),
+    "as400_tcp_connections",
+    _("AS/400 logged in tcp_connections"),
+    Dictionary(
+        elements = [
+            ("tcp_connections_levels",
+                Tuple(
+                    title = _("Levels for tcp_connections"),
+                    label = _("Levels for tcp_connections"),
+                    elements = [
+                        Integer(title = _("Warning at:" ), maxvalue = 100000000),
+                        Integer(title = _("Critical at:"), maxvalue = 100000000),
+                    ]
+                )
+            )
+        ]
+    ),
+    None,None
+)

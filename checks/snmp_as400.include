@@ -10,3 +10,7 @@ factory_settings['as400_jobs_defaults'] = {
 factory_settings['as400_users_defaults'] = {
   "users_levels": (9000,9500)
 }
+
+factory_settings['as400_tcp_connections_defaults'] = {
+  "tcp_connections_levels": (900000,950000)
+}
