@@ -19,5 +19,5 @@ def perfometer_check_mk_as400_jobs(row, check_command, perf_data):
 
     return "%d" % left, perfometer_linear(left, color)
 
-perfometers["check_mk-as400_jobs"] = perfometer_check_mk_as400_jobs
+perfometers["check_mk-snmp_as400_jobs"] = perfometer_check_mk_as400_jobs
 

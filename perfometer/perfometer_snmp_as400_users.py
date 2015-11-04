@@ -1,5 +1,5 @@
 # Very simple perf-o-meter
-def perfometer_check_mk_as400_cpu(row, check_command, perf_data):
+def perfometer_check_mk_as400_users(row, check_command, perf_data):
     left = float(perf_data[0][1])
     warn = float(perf_data[0][3])
     crit = float(perf_data[0][4])
@@ -17,7 +17,7 @@ def perfometer_check_mk_as400_cpu(row, check_command, perf_data):
     else:
         color = green
 
-    return "%.0f%%" % left, perfometer_linear(left, color)
+    return "%d" % left, perfometer_linear(left, color)
 
-perfometers["check_mk-snmp_as400_cpu"] = perfometer_check_mk_as400_cpu
+perfometers["check_mk-snmp_as400_users"] = perfometer_check_mk_as400_users
 
