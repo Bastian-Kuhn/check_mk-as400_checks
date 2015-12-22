@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 factory_settings['as400_cpu_defaults'] = {
   "levels"  : (80.0,90.0),
   "average" : 15

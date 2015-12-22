@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 def inventory_as400_tcp_connections(info):
   return [('', None)]
 

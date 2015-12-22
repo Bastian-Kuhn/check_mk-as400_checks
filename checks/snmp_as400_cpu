@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 def inventory_as400_cpu(info):
   return [('', None)]
 
