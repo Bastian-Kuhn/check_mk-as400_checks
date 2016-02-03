@@ -34,7 +34,7 @@ register_check_parameters(
             )
         ]
     ),
-    None,None
+    None,"dict"
 )
 
 register_check_parameters(
@@ -55,7 +55,7 @@ register_check_parameters(
             )
         ]
     ),
-    None,None
+    None,"dict"
 )
 
 register_check_parameters(
@@ -76,7 +76,7 @@ register_check_parameters(
             )
         ]
     ),
-    None,None
+    None,"dict"
 )
 
 register_check_parameters(
@@ -97,5 +97,5 @@ register_check_parameters(
             )
         ]
     ),
-    None,None
+    None,"dict"
 )
